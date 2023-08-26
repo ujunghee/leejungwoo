@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/arial-2');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+
+body,
+p , div, li{
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+}
+button {
+  border: none;
+  outline: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --gap: calc(var(
+  --size) / 14);
+  --duration: 60s;
+
+  /* scroll */
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(
+  --gap));
+
+  /* color */
+  --main-color: #222222;
+  --sub-color: #5665E7;
+  --sub-02-color: #DEE0E9;
+  --sub-03-color: #80838E;
+  --sub-04-color: #3A3B40;
+
+  /* background color */
+  --bg-color: #5665E7;
+  --sub-bg-color: #F0F2F6;
+  --color-bg: #fff;
+  --font-white: #fff;
+  --color-bg-accent: #fff;
+  --text-gradient-bg: linear-gradient(45deg, #6683E8, #8866E8);
+  --bg-gradient-bg: linear-gradient(140deg, #F0F2F6, #F0F1F7, #E6E5FF);
+  --bg-sub-gradient-bg: linear-gradient(0deg, #ffffff00, #F0F2F6, #F2F0FB, #F0F2F6, #ffffff00);
+
+  /* font size */
+  --font-size-46: clamp(1.5rem, 2.5vw, 2.8rem);
+  --font-size-40: clamp(1.4rem, 2.5vw, 2.4rem);
+  --font-size-34: clamp(1.2rem, 2.5vw, 2.1rem);
+  --font-size-30: clamp(1.2rem, 2.5vw, 1.8rem);
+  --font-size-24: clamp(1rem, 2vw, 1.6rem);
+  --font-size-20: clamp(.9rem, 2.5vw, 1.2rem);
+  --font-size-16: clamp(.8rem, 2vw, 1rem);
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+
+  /* padding */
+  --padding: clamp(1rem, 2.5vw, 1.2rem);
+  --padding-03: clamp(.4rem, 2.5vw, .6rem);
+  --padding-05: clamp(3rem, 10vw, 8rem);
+  --padding-08: clamp(1.2rem, 2.5vw, 3rem);
+  --padding-10: clamp(2.5rem, 2.5vw, 4rem);
+
+  /* width */
+  --text-width: 20rem;
+  --shadow: 1px 0.3rem 1rem 0.1rem #dee0e966;
+}
+
+.btn-100 {
+  background: var(--bg-color);
+  border: none;
+  color: var(--font-white);
+  padding: .8rem 1.2rem;
+  cursor: pointer;
+  border-radius: .9rem;
+  font-size: .86rem;
+  transition: .3s;
+}
+.btn-100:hover {
+  font-size: .8rem;
+  padding: .7.3rem 1.1rem;
+  margin-right: .07rem;
+  background: #4252e6;
+  transition: .3s;
+}
+
+.viusal-text {
+  font-size: var(--font-size-46);
+}
+
+.title-text {
+  font-size: var(--font-size-40);
+}
+
+.title-text,
+.viusal-text {
+  width: 100%;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.blue {
+  font-weight: 600;
+  color: var(--sub-color);
+}
+
+.bold {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.gradient-blue {
+  font-weight: 600;
+  background: var(--text-gradient-bg);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.size-40 {
+  font-size: var(--font-size-46);
+}
+.btn-200 {
+  background: var(--text-gradient-bg);
+  border: none;
+  color: var(--font-white);
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  display: block;
+  border-radius: 1rem;
+  width: 8rem;
+  margin: 2rem auto;
+}
