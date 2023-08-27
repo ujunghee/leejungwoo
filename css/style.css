@@ -6,7 +6,7 @@ body {
   font-family: 'Pretendard', sans-serif;
   font-size: 16px;
   font-family: 'Arial', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: #FCFCFC;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -430,10 +430,24 @@ header .hamburger-menu .open ul .logo {
 .section-04-list .sales-all .sales-information .sales-box .line {
   height: 1px;
   content: "";
-  left: -17rem;
+  left: 0;
   top: 46%;
+  right: 0;
   position: absolute;
-  width: 200%;
+  width: 100%;
+  background: #D9D1E8;
+  z-index: 0;
+}
+
+
+.section-04-list .sales-all .sales-information .sales-box .line.rebox {
+  height: 1px;
+  content: "";
+  left: 0;
+  top: 46%;
+  right: 0;
+  position: absolute;
+  width: 100%;
   background: #D9D1E8;
   z-index: 0;
 }
@@ -709,6 +723,7 @@ header .hamburger-menu .open ul .logo {
 }
 
 .section-07 .section-07-list .section07-content ul {
+  width: 100%;
   text-align: center;
   padding: var(--padding-08) 2rem;
 }
@@ -1320,6 +1335,10 @@ header .hamburger-menu .open ul .logo {
     padding: var(--padding-05) 0;
     margin: 0 auto;
     text-align: center;
-    height: 23rem;
+  }
+}
+@media screen and (min-width:1800px) and (max-width: 4200px)  {
+  .section-04-list .sales-all .sales-information .sales-box ul {
+    width: 50%;
   }
 }
