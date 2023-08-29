@@ -6,7 +6,7 @@ body {
   font-family: 'Pretendard', sans-serif;
   font-size: 16px;
   font-family: 'Arial', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #FCFCFC;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
